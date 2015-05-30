@@ -15,6 +15,21 @@ namespace SumOfPrimes
             Console.ReadKey();
         }
 
+
+        //  Public : Determine if the given number is a prime number.
+        //
+        //  x − The number to be checked.
+        //
+        //  Examples
+        //
+        //  isPrime(6)
+        //  => false
+        //
+        //  isPrime(7)
+        //  => true
+        //
+        //  Returns true if the given number is prime, else returns false
+
         bool isPrime(ulong x)
         {
             for (ulong i = 3; i < x; i += 2)
@@ -23,6 +38,18 @@ namespace SumOfPrimes
             }
             return true;
         }
+
+        //  Public : Compute sum of the prime numbers below the given limit.
+        //
+        //  limit - Limit below which sum is being computed.
+        //
+        //  Examples
+        //
+        //  sumOfPrimes (20)
+        //  => 77
+        //
+        //  If the given number is less than 2 returns 0,else returns sum of the prime numbers
+
 
         public ulong sumOfPrimes(ulong limit)
         {
