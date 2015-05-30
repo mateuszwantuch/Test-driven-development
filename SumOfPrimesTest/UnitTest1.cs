@@ -12,7 +12,7 @@ namespace SumOfPrimesTest
             SumOfPrimes.Program testclass = new SumOfPrimes.Program();
             ulong givenNumber = 20;
             ulong expectResult = 77;
-            ulong result = testclass.SumOfPrimes(givenNumber);
+            ulong result = testclass.sumOfPrimes(givenNumber);
             Assert.AreEqual(result, expectResult);
         }
     }
